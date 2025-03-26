@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkShop", "MilkShop\MilkShop.csproj", "{C47FB105-60E0-4EC9-8B0E-B64F0919B6AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C47FB105-60E0-4EC9-8B0E-B64F0919B6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47FB105-60E0-4EC9-8B0E-B64F0919B6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47FB105-60E0-4EC9-8B0E-B64F0919B6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47FB105-60E0-4EC9-8B0E-B64F0919B6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47DA5C78-1A31-4D6D-B160-95156724CA88}
+	EndGlobalSection
+EndGlobal
