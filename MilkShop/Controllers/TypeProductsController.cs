@@ -97,6 +97,7 @@ namespace MilkShop.Controllers
             {
                 try
                 {
+                    typeProduct.DateRegister = DateTime.Now;
                     _context.Update(typeProduct);
                     await _context.SaveChangesAsync();
                 }

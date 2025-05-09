@@ -4,43 +4,43 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Създаване</h1>
 
-<h4>Producer</h4>
+<h4>Пройзводител</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Име</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EIK" class="control-label"></label>
+                <label asp-for="EIK" class="control-label">Номер на пройзводителя</label>
                 <input asp-for="EIK" class="form-control" />
                 <span asp-validation-for="EIK" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label asp-for="Description" class="control-label">Описание</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            @* <div class="form-group">
                 <label asp-for="DateRegister" class="control-label"></label>
                 <input asp-for="DateRegister" class="form-control" />
                 <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Създаване" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Върни се обратно</a>
 </div>
 
 @section Scripts {
