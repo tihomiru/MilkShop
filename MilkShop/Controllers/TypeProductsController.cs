@@ -57,6 +57,7 @@ namespace MilkShop.Controllers
         {
             if (ModelState.IsValid)
             {
+                typeProduct.DateRegister = DateTime.Now;
                 _context.Add(typeProduct);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

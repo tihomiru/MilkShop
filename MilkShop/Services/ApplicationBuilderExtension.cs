@@ -55,8 +55,8 @@ namespace MilkShop.Services
                 {
                     UserName = "superadmin",
                     Email = "superadmin@gmail.com",
-                    FirstName = "Tonya",
-                    LastName = "Belezireva",
+                    FirstName = "Tihomir",
+                    LastName = "Ushev",
                     PhoneNumber = "0899999999",
                     EmailConfirmed = true,
                     PhoneNumberConfirmed = true
@@ -69,8 +69,7 @@ namespace MilkShop.Services
                     if (result.Succeeded)
                     {
                         await userManager.AddToRoleAsync(defaultUser, "Admin");
-                        //await userManager.AddToRoleAsync(defaultUser, Roles.Guest.ToString());
-                        //await userManager.AddToRoleAsync(defaultUser, Roles.User.ToString());                    
+                                           
                     }
                 }
             }
