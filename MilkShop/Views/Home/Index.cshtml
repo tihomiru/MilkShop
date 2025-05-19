@@ -2,7 +2,243 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div id="container">
+    <img src="~/img/logo.png" id="logo" />
+    <nav>
+        <ul class="menu">
+            <li class="menuIteam"><a href="index.html">Начало</a></li>
+            <li class="menuIteam">
+                <a href="StageTwo.html">Продукти</a>
+                <ul class="subMenu">
+                    <li><a href="KiseloMlqko.html">Кисело мляко</a></li>
+                    <li><a href="PrqsnoMlqko.html">Прясно мляко</a></li>
+                    <li><a href="kashkaval.html">Кашкавал</a></li>
+                    <li><a href="Sirene.html">Сирене</a></li>
+                    <li><a href="Special.html">Специалитети</a></li>
+                </ul>
+            </li>
+            <li class="menuIteam"><a href="ForUs.html">За нас</a></li>
+            <li class="menuIteam"><a href="Contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
 </div>
+<hr width="90%" size="3" color="peachpuff" />
+<div class="imgcontainer">
+    <img src="IMG/yogurt.jpg" class="slide" />
+    <img src="IMG/freshMilk.jpg" class="slide" />
+    <img src="IMG/whitechees.jpg" class="slide" />
+    <img src="IMG/chees.jpg" class="slide" />
+    <img src="IMG/butter.jpg" class="slide" />
+</div>
+<div class="Hellocontainer">
+    <h2>Добре дошли във "Млечна Магия"</h2>
+    <p>
+        Открийте магията на качеството и грижата!
+        Нашата мисия е да ви предложим продукти, които съчетават иновация, безопасност и изключителен вкус.
+        Разгледайте нашите програми, научете повече за продуктите ни и се вдъхновете от възможностите,
+        които създаваме за вас и вашето семейство.
+        Ние вярваме, че всяка малка капка носи голямо значение.
+        С "Млечна Магия" светът е по-добър!
+    </p>
+</div>
+<div class="infocontainer">
+    <h2>Какво предлагаме?</h2>
+    <ol type="1">
+        <li>Натурални продукти, произведени с любов и внимание към детайлите.</li>
+        <li>Гаранция за свежест и качество във всяка капка.</li>
+        <li>Устойчивост и грижа за околната среда, за да запазим природата за следващите поколения.</li>
+    </ol>
+    <dl>
+        <dt>
+            Защо да изберете нас?
+        </dt>
+        <dd>
+            "Млечна Магия" не е просто бранд, а част от вашия ежедневен живот.
+            Вдъхновени от природата и традициите, ние влагаме страст и иновации в нашите продукти,
+            за да направим Вашите моменти на удоволствие още по-вълшебни.
+        </dd>
+        <dt>
+            Открийте повече!
+        </dt>
+        <dd>
+            Разгледайте нашите предложения, научете за здравословните ползи на млечните продукти
+            и открийте вкусни рецепти, които ще Ви вдъхновят. Заедно ще направим всяка хапка специална!
+        </dd>
+    </dl>
+</div>
+<hr width="90%" size="3" color="peachpuff" />
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: papayawhip;
+    
+}
+
+nav {
+    display: flex;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 140px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 140px;
+    border: groove;
+    border-color: peru;
+    line-height: 80px;
+    width: 70%;
+    height: 70px;
+    margin: 39px 0px 0px 130px;
+    
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    color: black;
+    margin: 0 0px 48px 54px;
+    justify-content: space-between;
+    text-align: center
+}
+
+.menuIteam {
+    position: relative;
+    padding: 0px 20px 0 0px;
+    margin: -4px 0px 0 85px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: bisque;
+    list-style-type: none;
+    margin: 30px 20px 0 -30px ;
+    padding: 0px;
+    border: 3px groove peru;
+    width: 140%;
+    z-index:10;
+}
+
+    .subMenu li {
+        color: black;
+    }
+
+.menuIteam:hover .subMenu {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+#container {
+    background-image: url('~/img/milkwave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px 350px;
+    display: flex;
+}
+#logo{
+    height:125px;
+}
+.imgcontainer {
+    max-width: 30%;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /*width: 100%;*/
+    /*height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: slideAnimation 12s infinite;*/
+}
+.slide{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+    animation:slideAnimation 20s infinite;
+}
+.slide img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(99%);
+}
+.slide:nth-child(1){
+    animation-delay:0s;
+    opacity:1
+}
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+.slide:nth-child(4) {
+    animation-delay: 12s;
+}
+.slide:nth-child(5) {
+    animation-delay: 16s;
+}
+.keyframes slideAnimation{
+    0%, 100%{
+        opacity:0;
+    }
+    10%, 30%{
+        opacity: 1;
+    }
+    /*33%, 66%{
+        opacity:1;
+    }
+    99%{
+        opacity:0;
+    }*/
+}
+.Hellocontainer{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:justify;
+    flex-direction:column;
+    padding:0 0 0 30px;
+    margin-top: -330px
+}
+.Hellocontainer p{
+    width:30%;
+}
+.infocontainer {
+    display: flex;
+    justify-self:flex-end;
+    flex-wrap: wrap;
+    text-align: justify;
+    flex-direction: column;
+    padding:0 30px 0 0;
+    margin-top: -330px
+}
+.infocontainer {
+    width: 30%;
+}
+dt{
+    font-size:23px;
+    font-weight:bold
+}
+</style>
