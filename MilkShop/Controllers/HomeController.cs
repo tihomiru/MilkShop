@@ -12,8 +12,15 @@ namespace MilkShop.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult Index()
+        public IActionResult ForUs()
+        {
+            return View();
+        }
+        public IActionResult Products()
+		{
+			return View();
+		}
+		public IActionResult Index()
         {
             return View();
         }

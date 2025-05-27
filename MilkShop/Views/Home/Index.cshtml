@@ -13,19 +13,19 @@
     <img src="~/img/logo.png" id="logo" />
     <nav>
         <ul class="menu">
-            <li class="menuIteam"><a href="index.html">Начало</a></li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="Home">Начало</a></li>
             <li class="menuIteam">
-                <a href="Products.cshtml">Продукти</a>
+                <a asp-controller="Home" asp-action="Products">Продукти</a>
                 <ul class="subMenu">
-                    <li><a href="KiseloMlqko.html">Кисело мляко</a></li>
-                    <li><a href="PrqsnoMlqko.html">Прясно мляко</a></li>
-                    <li><a href="kashkaval.html">Кашкавал</a></li>
-                    <li><a href="Sirene.html">Сирене</a></li>
-                    <li><a href="Special.html">Специалитети</a></li>
+                    <li><a asp-controller="Home" asp-action="KM">Кисело мляко</a></li>
+                    <li><a asp-controller="Home" asp-action="PM">Прясно мляко</a></li>
+                    <li><a asp-controller="Home" asp-action="Kashkava">Кашкавал</a></li>
+                    <li><a asp-controller="Home" asp-action="Sirene">Сирене</a></li>
+                    <li><a asp-controller="Home" asp-action="Special">Специалитети</a></li>
                 </ul>
             </li>
-            <li class="menuIteam"><a href="ForUs.html">За нас</a></li>
-            <li class="menuIteam"><a href="Contacts.html">Контакти</a></li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="ForUs">За нас</a></li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="Contacts">Контакти</a></li>
         </ul>
     </nav>
  </div>

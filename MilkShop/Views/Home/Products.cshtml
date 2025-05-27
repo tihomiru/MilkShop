@@ -1,0 +1,383 @@
+﻿
+@{
+    ViewData["Title"] = "Products";
+}
+
+@* <h1>@ViewData["Title"]</h1> *@
+
+<div class="login">
+    <lt class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register&#10153;</a>
+    </lt>
+    <lt class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Login&#10152 @User.Identity?.Name</a>
+    </lt>
+</div>
+<div id="container">
+    <img src="~/img/logo.png" id="logo" />
+    <nav>
+        <ul class="menu">
+            <li class="menuIteam"><a asp-controller="Home" asp-action="Home">Начало</a></li>
+            <li class="menuIteam">
+                <a asp-controller="Home" asp-action="Products">Продукти</a>
+                <ul class="subMenu">
+                    <li><a asp-controller="Home" asp-action="KM">Кисело мляко</a></li>
+                    <li><a asp-controller="Home" asp-action="PM">Прясно мляко</a></li>
+                    <li><a asp-controller="Home" asp-action="Kashkava">Кашкавал</a></li>
+                    <li><a asp-controller="Home" asp-action="Sirene">Сирене</a></li>
+                    <li><a asp-controller="Home" asp-action="Special">Специалитети</a></li>
+                </ul>
+            </li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="ForUs">За нас</a></li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="Contacts">Контакти</a></li>
+        </ul>
+    </nav>
+</div>
+<hr width="90%" size="3" color="peachpuff" />
+<div class="product-container">
+    <div class="product-card">
+        <a href="productOne.html">
+            <img src="~/img/KM45.png" alt="Кисело мляко 4.5%">
+            <h3>Кисело мляко 4.5%</h3>
+            <p>Описание на продукта: Българско краве мляко Цена: 1.50 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTwo.html">
+            <img src="~/img/KM36.png" alt="Кисело мляко 3.6%">
+            <h3>Кисело мляко 3.6%</h3>
+            <p>Описание на продукта: Българско краве мляко Цена: 1.30 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productThree.html">
+            <img src="~/img/KM2.png" alt="Кисело мляко 2%">
+            <h3>Кисело мляко 2%</h3>
+            <p>Описание на продукта: Българско краве мляко Цена: 1.25 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productFive.html">
+            <img src="~/img/PM2.png" alt="Прясно мляко 2%">
+            <h3>Прясно мляко 2%</h3>
+            <p>Описание на продукта: Българско краве мляко Цена: 1.35 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productFour.html">
+            <img src="~/img/PM36.png" alt="Прясно мляко 3.6%">
+            <h3>Прясно мляко 3.6%</h3>
+            <p>Описание на продукта: Българско краве мляко Цена: 1.50 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productSix.html">
+            <img src="~/img/BS200.png" alt="Бяло краве сирене 0.200кг">
+            <h3>Бяло краве сирене 0.200кг</h3>
+            <p>Описание на продукта: Бяло краве сирене Цена: 4.75 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productSeven.html">
+            <img src="~/img/BS500.png" alt="Бяло краве сирене 0.500кг">
+            <h3>Бяло краве сирене 0.500кг</h3>
+            <p>Описание на продукта: Бяло краве сирене Цена: 5.40 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productEight.html">
+            <img src="~/img/BS4.png" alt="Бяло краве сирене 4кг">
+            <h3>Бяло краве сирене 4кг</h3>
+            <p>Описание на продукта: Бяло краве сирене Цена: 13.70 лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productNine.html">
+            <img src="~/img/TS.png" alt="Топено сирене">
+            <h3>Топено сирене</h3>
+            <p>Описание на продукта: Топено сирене Цена: 3.90лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTen.html">
+            <img src="~/img/K200.png" alt="Краве Кашкавал">
+            <h3>Краве кашкавал 0.200кг</h3>
+            <p>Описание на продукта: Краве кашкавал Цена: 3.80лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productEleven.html">
+            <img src="~/img/KS200.png" alt="Краве Кашкавал слайс">
+            <h3>Краве кашкавал слайс 0.200кг</h3>
+            <p>Описание на продукта: Краве кашкавал слайс Цена: 4.35лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTwelv.html">
+            <img src="~/img/CK300.png" alt="Краве Кашкавал царевица">
+            <h3>Краве кашкавал царевица 0.300кг</h3>
+            <p>Описание на продукта: Краве кашкавал царевица Цена: 4.90лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTt">
+            <img src="~/img/NK300.png" alt="Настърган краве Кашкавал">
+            <h3>настърган краве кашкавал 0.300кг</h3>
+            <p>Описание на продукта: Краве кашкавал царевица Цена: 4.90лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productFR">
+            <img src="~/img/TK420.png" alt="Краве Кашкавал триъгалник">
+            <h3>Краве кашкавал триъгалник 0.420кг</h3>
+            <p>Описание на продукта: Краве кашкавал триъгалник Цена: 5.30лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productFivet.html">
+            <img src="~/img/K9.png" alt="Краве Кашкавал пита">
+            <h3>Краве кашкавал пита 9кг</h3>
+            <p>Описание на продукта: Краве кашкавал пита Цена: 15.60лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productSixt.html">
+            <img src="~/img/M250.png" alt="Краве масло">
+            <h3>Краве масло 0.250кг</h3>
+            <p>Описание на продукта: Краве масло Цена: 3.60лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productSt.html">
+            <img src="~/img/KA300.png" alt="Катък">
+            <h3>Катък 0.300кг</h3>
+            <p>Описание на продукта: Краве кашкавал пита Цена: 5.60лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productEt.html">
+            <img src="~/img/I450.png" alt="Извара">
+            <h3>Извара 0.450кг</h3>
+            <p>Описание на продукта: Извара Цена: 4.50лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productNt.html">
+            <img src="~/img/A330.png" alt="Айрян">
+            <h3>Айрян 0.330л.</h3>
+            <p>Описание на продукта: Айрян Цена: 1.30лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productT.html">
+            <img src="~/img/PA330.png" alt="Плодов айрян">
+            <h3>Плодов Айрян 0.330л.</h3>
+            <p>Описание на продукта: Плодов Айрян с вкус на ягода Цена: 1.50лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTo.html">
+            <img src="~/img/PMM200.png" alt="Плодово мляко">
+            <h3>Плодово мляко със вкус на ягода 0.200кг.</h3>
+            <p>Описание на продукта: Плодово мляко със вкъс на ягода Цена: 0.90лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTwentytwo.html">
+            <img src="~/img/PMQ200.png" alt="Плодово мляко">
+            <h3>Плодово мляко със вкус на малина 0.200кг.</h3>
+            <p>Описание на продукта: Плодово мляко със вкъс на малина Цена: 0.90лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+    <div class="product-card">
+        <a href="productTwentyThree.html">
+            <img src="~/img/PMG200.png" alt="Плодово мляко">
+            <h3>Плодово мляко със вкус и парченца горски плодове 0.200кг.</h3>
+            <p>Описание на продукта: Плодово мляко със вкъс и парченца горски плодове Цена: 1.60лв.</p>
+        </a>
+        <button>Купи</button>
+    </div>
+</div>
+<hr width="95%" size="3" color="peachpuff" />
+<a href="#container">
+    <img src="IMG/logo.png" id="bs" />
+</a>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-color: papayawhip;
+    }
+
+    nav {
+        /*background-color: bisque;
+    */ display: flex;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 140px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 140px;
+        border: groove;
+        border-color: peru;
+        line-height: 80px;
+        width: 70%;
+        height: 70px;
+        margin: 39px 0px 0px 130px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+    .menu {
+        list-style-type: none;
+        display: flex;
+        color: black;
+        margin: 0 0px 48px 54px;
+        justify-content: space-between;
+        text-align: center
+    }
+
+    .menuIteam {
+        position: relative;
+        padding: 0px 20px 0 0px;
+        margin: -4px 0px 0 85px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .subMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: bisque;
+        list-style-type: none;
+        margin: 30px 20px 0 -30px;
+        padding: 0px;
+        border: 3px groove peru;
+        width: 140%;
+    }
+
+        .subMenu li {
+            color: black;
+        }
+
+    .menuIteam:hover .subMenu {
+        display: block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #container {
+        display: flex;
+    }
+
+    #container {
+        background-image: url('http://localhost:60711/IMG/milkwave.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1500px 350px;
+        background-size: 1500px 350px;
+    }
+
+    #logo {
+        height: 145px;
+    }
+
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+        .product-container a {
+            text-decoration: none;
+            color: black;
+        }
+
+    .product-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 250px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+            .product-card button:hover {
+                background-color: #0056b3;
+            }
+
+    #bs {
+        height: 145px;
+    }
+</style>
+

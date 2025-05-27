@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Обработка</h1>
+<h1>Edit</h1>
 
-<h4>Продукт</h4>
+<h4>Product</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,56 +14,53 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="Name" class="control-label">Име</label>
+                <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TypeProductId" class="control-label">Вид на продукта</label>
+                <label asp-for="TypeProductId" class="control-label"></label>
                 <select asp-for="TypeProductId" class="form-control" asp-items="ViewBag.TypeProductId"></select>
                 <span asp-validation-for="TypeProductId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImageURL" class="control-label">Изображение</label>
+                <label asp-for="ImageURL" class="control-label"></label>
                 <input asp-for="ImageURL" class="form-control" />
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label">Цена</label>
+                <label asp-for="Price" class="control-label"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Packages" class="control-label">Вид тегло</label>
+                <label asp-for="Packages" class="control-label"></label>
                 <select asp-for="Packages" class="form-control"></select>
                 <span asp-validation-for="Packages" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label">Описание</label>
+                <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProducerId" class="control-label">Вид производител</label>
+                <label asp-for="ProducerId" class="control-label"></label>
                 <select asp-for="ProducerId" class="form-control" asp-items="ViewBag.ProducerId"></select>
                 <span asp-validation-for="ProducerId" class="text-danger"></span>
             </div>
-            @* <div class="form-group">
+            <div class="form-group">
                 <label asp-for="DateRegister" class="control-label"></label>
                 <input asp-for="DateRegister" class="form-control" />
                 <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div> *@
+            </div>
             <div class="form-group">
-                <input type="submit" value="Запази" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Върни се обратно</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

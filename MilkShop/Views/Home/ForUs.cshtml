@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewData["Title"] = "ForUs";
+}
+
+<div class="login">
+    <lt class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register&#10153;</a>
+    </lt>
+    <lt class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Login&#10152 @User.Identity?.Name</a>
+    </lt>
+</div>
+<div id="container">
+    <img src="~/img/logo.png" id="logo" />
+    <nav>
+        <ul class="menu">
+            <li class="menuIteam"><a asp-controller="Home" asp-action="Home">Начало</a></li>
+            <li class="menuIteam">
+                <a asp-controller="Home" asp-action="Products">Продукти</a>
+                <ul class="subMenu">
+                    <li><a asp-controller="Home" asp-action="KM">Кисело мляко</a></li>
+                    <li><a asp-controller="Home" asp-action="PM">Прясно мляко</a></li>
+                    <li><a asp-controller="Home" asp-action="Kashkava">Кашкавал</a></li>
+                    <li><a asp-controller="Home" asp-action="Sirene">Сирене</a></li>
+                    <li><a asp-controller="Home" asp-action="Special">Специалитети</a></li>
+                </ul>
+            </li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="ForUs">За нас</a></li>
+            <li class="menuIteam"><a asp-controller="Home" asp-action="Contacts">Контакти</a></li>
+        </ul>
+    </nav>
+</div>
+<hr width="90%" size="3" color="peachpuff" />
+<div class="info">
+    <div>
+        <fieldset>
+            <legend>
+                Добре дошли в "Млечна магия"
+            </legend>
+            <p id="replica">Истински вкус, който омагьосва!</p>
+            <p>
+                "Млечна магия" е вашият доверен партньор за
+                висококачествени млечни продукти, създадени
+                с любов и грижа. Съчетаваме традиционни рецепти
+                с модерни технологии, за да предложим натурални,
+                вкусни и здравословни млечни изделия за цялото семейство.
+            </p>
+        </fieldset>
+        <fieldset class="productInfo">
+            <legend>Нашите продукти</legend>
+            <p>Внимателно подбираме суровините и предлагаме богат асортимент от млечни изделия:</p>
+            <dl>
+                <dt>&raquo;Прясното ни мляко</dt>
+                <dd>
+                    &lowast; и обезмаслено прясно мляко, с неустоим вкус и свежест.
+                </dd>
+                <dt>&raquo;Киселото  ни мляко</dt>
+                <dd>&lowast;Традиционно българско кисело мляко с жива закваска – здравословно и вкусно.</dd>
+                <dt>&raquo;Сиренети и кашкавала</dt>
+                <dd>&lowast;Качествени български сирена и кашкавали с автентичен аромат.</dd>
+                <dt>&raquo;Mаслото</dt>
+                <dd>&lowast;Натурални и ароматни продукти, които ще направят всяка рецепта специална.</dd>
+                <dt>&raquo;Млечните ни десерти</dt>
+                <dd>&lowast;Кремове, пудинги и кисело мляко с плодове – за малки и големи.</dd>
+            </dl>
+        </fieldset>
+        <fieldset>
+            <legend>Защо да изберете "Млечна магия"?</legend>
+            <label class="boldLB">&#10029;съставки -</label>
+            <label> Без изкуствени добавки и консерванти.</label>
+            <br />
+            <label class="boldLB">&#10029;Традиция и качество -</label>
+            <label> Продукти, вдъхновени от българските млечни традиции.</label>
+            <br />
+            <label class="boldLB">&#10029;Грижа за здравето -</label>
+            <label> Богати на пробиотици и хранителни вещества.</label>
+            <br />
+            <label class="boldLB">&#10029;Любов и професионализъм -</label>
+            <label> Създадени с внимание и сърце за нашите клиенти.</label>
+            <br />
+        </fieldset>
+    </div>
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-color: papayawhip;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+    nav {
+        display: flex;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 140px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 140px;
+        border: groove;
+        border-color: peru;
+        line-height: 80px;
+        width: 70%;
+        height: 70px;
+        margin: 39px 0px 0px 130px;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        color: black;
+        margin: 0 0px 48px 54px;
+        justify-content: space-between;
+        text-align: center
+    }
+
+    .menuIteam {
+        position: relative;
+        padding: 0px 20px 0 0px;
+        margin: -4px 0px 0 85px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .subMenu {
+        display: none;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        background-color: bisque;
+        list-style-type: none;
+        margin: 30px 20px 0 -30px;
+        padding: 0px;
+        border: 3px groove peru;
+        width: 140%;
+        z-index: 10;
+    }
+
+        .subMenu li {
+            color: black;
+        }
+
+    .menuIteam:hover .subMenu {
+        display: block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #container {
+        background-image: url('http://localhost:60711/IMG/milkwave.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1500px 350px;
+        display: flex;
+    }
+
+    #logo {
+        height: 125px;
+    }
+
+    .info {
+        width: 60%;
+    }
+
+    legend {
+        font-size: 23px;
+        font-weight: bold
+    }
+
+    #replica {
+        font-weight: bold;
+    }
+
+    fieldset {
+        justify-self: center;
+        align-content: center;
+        margin: 0 -300px 30px 200px;
+        border-color: gold;
+    }
+
+    .productInfo {
+    }
+
+    .boldLB {
+        font-weight: bold;
+    }
+</style>
+
