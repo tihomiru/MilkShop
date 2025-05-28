@@ -12,6 +12,30 @@ namespace MilkShop.Controllers
         {
             _logger = logger;
         }
+        public IActionResult KiseloMlqko()
+        {
+            return View();
+        }
+        public IActionResult PM()
+        {
+            return View();
+        }
+        public IActionResult Kashkava()
+        {
+            return View();
+        }
+        public IActionResult Sirene()
+        {
+            return View();
+        }
+        public IActionResult Special()
+        {
+            return View();
+        }
+        public IActionResult Contacts()
+        {
+            return View();
+        }
         public IActionResult ForUs()
         {
             return View();
